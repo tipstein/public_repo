@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+javafx {
+    version = "14"
+    modules = [ 'javafx.controls', 'javafx.graphics' ]
+}
+
+apply plugin: 'application'
+mainClassName = 'whateverTheClassThatContainsMainIsCalled'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    Main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}

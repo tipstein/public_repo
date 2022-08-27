@@ -1,0 +1,225 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fnil\fcharset0 LucidaGrande;\f2\froman\fcharset0 Times-Roman;
+\f3\ftech\fcharset77 Symbol;}
+{\colortbl;\red255\green255\blue255;\red45\green59\blue69;\red45\green59\blue69;\red5\green99\blue193;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c17647\c23137\c27059;\csgenericrgb\c17647\c23137\c27059;\csgenericrgb\c1961\c38824\c75686;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid401\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid501\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid601\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid701\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid8}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}}
+{\info
+{\author Adam Weinstein}}\margl1440\margr1440\vieww21580\viewh18000\viewkind1\viewscale161
+\deftab720
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs20 \cf2 \uc0\u8232 \u8232 Adam Tipps Weinstein\
+CS6015: Software Engineering\
+\
+\pard\pardeftab720\ri0\qc\partightenfactor0
+\cf2 Welcome to msdscript!\
+\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 * What\'92s included\
+\pard\pardeftab720\li715\fi4\ri0\partightenfactor0
+\cf2 	msdscript is a small, Turing-complete, functional language, for use with numbers, Booleans, and first-class functions. Below you will find useful suggestions for using msdscript and integrating it into other programs.\uc0\u8232 \cf3 \
+\pard\pardeftab720\fi720\ri0\partightenfactor0
+\cf3 \
+\pard\pardeftab720\li706\fi-707\ri0\partightenfactor0
+\cf3 * Build instructions\uc0\u8232 		Download the msdscript .zip file and extract the contents. Use \'93
+\f1 \uc0\u8984 
+\f2 F\'94 
+\f0 to find \'93msdscript.\'94 After finding the file, open a terminal window and use the path directory to navigate the terminal\'92s directories until you locate the msdscript folder. Open the msdscript folder using \'93ls\'94 and type \'93make.\'94 This will create the msdscript executable file. You can now run msdscript by typing \'93./msdscript\'94. \
+\pard\pardeftab720\fi720\ri0\partightenfactor0
+\cf2 \uc0\u8232 * Functionality \
+\pard\pardeftab720\li740\fi-21\ri0\partightenfactor0
+\cf2 	msdscript will interpret arguments from the command-line and either return and print the results, or will echo(print) the given arguments. There are two modes: --interp and -\'96print. For example, by entering: ./msdscript \'96-interp, the user is in interp mode and will be prompted for an entry. <entry>5+5 will produce <output>5+5=10. <entry>5==6 will produce <output>_false. In --print mode, <entry>5+5 will produce <output>5+5. <entry>5==6 will produce <output>5==6.\
+	msdscript is left-associating, meaning it evaluates expression from left to right, and it uses the following precedence table for evaluating arguments:\
+\pard\pardeftab720\li1433\fi6\ri0\partightenfactor0
+\cf2 [highest precedence]\
+Addition\
+Multiplication\
+Conditional\
+Call\
+_let\
+_if\
+Function\
+[lowest precedence] \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 	\
+	Examples:\
+\pard\tx1059\tx1084\pardeftab720\li1078\fi-1079\ri0\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	\uc0\u8226 	}5+6*8+5 will be parsed as: (5+6)*(8+5)\
+{\listtext	\uc0\u8226 	}\cf3 _let x=5 _in _let y=3 _in y+2+x\
+\pard\tx720\tx1059\tx1084\pardeftab720\ri0\partightenfactor0
+\cf2 				will be parsed as \cf3 (_let x=5 _in ((_let y=3 _in (y+2))+x))\cf2 \
+\pard\tx1059\tx1084\pardeftab720\li1078\fi-1079\ri0\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\uc0\u8226 	}_let a = 1 == 2 _in _if 1 == 2 _then _False + 5 _else 88\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 		will be parsed as: _let a=(1==2) _in _if (1==2) _then \
+						(_False+5) _else 88\
+\pard\pardeftab720\li707\fi-708\ri0\partightenfactor0
+\cf2 		\
+		In the last examples, note the expressions that are printed with () bindings. These expressions have a higher precedence and are evaluated first. msdscript prints the () to note that precedence. It is also possible to create precedence by including parentheses in --interp mode. For example, the user could input: 5 + (5*(5+5)). \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 \
+* Syntax\
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\cf2 		msdscript will work with well-formed expressions. An expression (<expr>) can be a number (5), a variable (\'93x\'94), a Boolean expression (_true or _false) or a combination of expressions. For example, an addition expression is composed of two sub-expressions, a left-hand-side expression and a right-hand-side expression. i.e. \
+		\
+		<add expression>: <variable>x + <number>10 \
+\
+which is the same as x+10. A well-formed expression must follow a few rules:\
+\
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\ls3\ilvl0\cf2 1.	When representing numbers, simple equations, variables, or Boolean values, follow this pattern:\
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\cf2 \
+<expr> = <number>\uc0\u8232        | <expr> + <expr>\u8232        | <expr> * <expr>\u8232        | <variable>\
+	 \cf3 | <Boolean>\
+	 | <Conditional>\
+\cf2 \
+For example:\
+<expr> = <5> 		-> input: 5\
+<expr> = <5> + <5> 	-> input: 5+5\
+<expr> = <5> * <5>	-> input: 5*5\
+<expr> = <\'91x\'92>		-> input: x\
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\cf3 <expr> = <_true>		-> input: _true\
+<expr> = <_false>		-> input: _false\
+<expr> = <y>==<y>		-> input: y==y\
+<expr> = <5> + <-4>	-> input: 5+-4\
+\cf2 \
+Notice in the last example that -4 is considered an expression. This means subtraction is really a form of adding, in which a negative number is added to a positive number. msdscript handles subtraction in this way. \
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\cf2 \
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\ls4\ilvl0\cf2 2. Expressions can be combined with other expressions. For example, 5 is a number expression and can be added to another number expression, 5 using \'93+\'94. But an addition statement is also an expression (and add expression), requiring a right-hand and left-hand side expression. An add expression can thus be combined with another add expression: (5+5) + (5+5). (5==6) + (5+6) is also a well-formed statement, though it will return the error that conditionals cannot be added to numbers. In the case of add and multiply expressions, only number values are acceptable.  \
+		Also take note that in the case of ==, not all values can be compared. Only number values can be compared with other number values, and only Boolean values can be compared with other Boolean values. \
+\
+\
+3. _let statements bind a variable to an expression (let x=5). The variable can only be referenced in an _in expression, which follows a _let (_let x=5 _in x). When using _let expressions, follow this pattern: \
+\
+		<expr> = _let <variable> = <expr> \
+\
+A more complicated _let statement might be: \
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\ls4\ilvl0\cf3 \
+_let<variable>x = <expr>5 _in _let<variable>y = <expr>3 _in <expr>(<expr>y + <expr>2) + <expr>x \
+which will parse as:\cf2  \
+\
+		(_let x=5 _in ((_let y=3 _in (y+2))+x)).\
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\cf2 \
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\ls5\ilvl0\cf2 4.	When using conditional statements, follow this pattern:	\
+	\
+		_if<expr> _then<expr> _else<expr>\
+	\
+For example, following the pattern:\
+\
+		_if<expr>(<expr>x == <expr>3) _then<expr>1 _else<expr>0\
+\
+the user enters: if x==3 _then 1 _else 0. Statements can also be nested\
+\
+For example,\
+\
+		_let same = 1 == 2 _in _if 1==2 _then _false + 5 _else 88\
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\cf2 \
+\pard\pardeftab720\li707\fi-18\ri0\partightenfactor0
+\ls6\ilvl0\cf2 5.	When using and calling functions, follow this pattern:	\
+\
+		<expr> = _fun(<variable>)<expr> = _<expr>(<expr>)\
+\
+For example, following the pattern:\
+\
+		<expr> =_fun(<variable>x)<expr>(<expr>x + <expr>1) \
+\
+the user enters, \
+\
+		_let f = _fun(x)x+1 _in f(10)\
+\
+As long as you follow the pattern, function call can become quite complex:\
+\
+		_let x = 8 _in _let f = _fun (x) x*x _in f(2)\
+\pard\pardeftab720\li1440\ri630\partightenfactor0
+\cf2 \
+\pard\pardeftab720\li707\fi-702\ri0\partightenfactor0
+\cf2 * How to run the software\uc0\u8232 \'a0 \'a0 After following the build instructions, you can run msdscript from the terminal\'92s command line by typing \'93./msdscript\'94 , followed by the mode you would like to use. For example, you can type:\
+\pard\pardeftab720\li707\fi7\ri0\partightenfactor0
+\ls7\ilvl0
+\f3 \cf2 \'a5	
+\f0 ./msdscript \'96-interp\
+\ls7\ilvl0
+\f3 \'a5	
+\f0 ./msdscript --print \
+\pard\pardeftab720\li707\fi7\ri0\partightenfactor0
+\cf2 --interp will enter interp mode and will await user input. Each input should be followed by pressing return. For more details on msdscript syntax, see above: \'93Syntax.\'94 Example arguments are:\
+\pard\pardeftab720\li707\fi7\ri0\partightenfactor0
+\ls8\ilvl0
+\f3 \cf2 \'a5	
+\f0 5+5\
+\ls8\ilvl0
+\f3 \'a5	
+\f0 5+-6\
+\ls8\ilvl0
+\f3 \'a5	
+\f0 -7+-8\
+\ls8\ilvl0
+\f3 \'a5	
+\f0 99*59*90+-48+-44+50+95*31*45*57*28\
+\ls8\ilvl0
+\f3 \'a5	
+\f0 5==6\
+\ls8\ilvl0
+\f3 \'a5	
+\f0 _let a=1 _in _if (x==5) _then 6 _else 7\
+\ls8\ilvl0
+\f3 \'a5	
+\f0 (_fun(x)(x+10)(5))\
+\pard\pardeftab720\li707\fi7\ri0\partightenfactor0
+\cf2 In interp mode, msdscript will return the results, .i.e. the first argument will return 5+5=10.\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 \
+*API information\
+\pard\pardeftab720\li705\fi-2\ri0\partightenfactor0
+\cf2 		msdscript works in the following manner: the user enters an expression to be evaluated; msdscript parses that input according to an inner Expressions class; the expression is either evaluated, and a value is returned, or the expression is echoed back/printed. \
+		Understanding these two transactions\'97interpreting and printing\'97 means the user can implement the handful of virtual methods that make up these transactions, when nesting msdscript inside other programs. \
+		For example, in the which_day calendar application, the user enters a meeting day for the week, and the program replies with the day of the week on which the meeting falls. This means the which_day app needs to be able to read input, evaluate it, and compute an answer\'97tasks that msdscript is especially good at. msdscript works by transforming the initial user input into a string and then parsing that string for expressions; the parser sends the expressions to be interpreted and a value is returned. Thus, integrating the which_day calendar application requires implementing the following methods, which is easily done with a few lines of code:\
+\
+		PTR(Expr) parse_expr(std::stream &in);\
+		PTR(Value) interp(PTR(Env)environment);\
+		std::string to_string();\
+\
+		parse_expr reads an input stream and returns an Expression; the expression is passed to interp, which then returns a value. In the integration instructions below, one can see the methods being used with which_day. Note that interp takes an Env parameter. msdscript uses environments to store interpreted values. The instructions below describe creating an empty environment for integration purposes. Further understanding of msdscript\'92s use of environments is beyond the technical scope of this document.\
+		For users who would like to add extra functionality to msdscript, we recommend starting with the Expression class. An example of a future build might be division operators on binary expressions, or power operations for numbers and variables. Virtual methods implemented for the above expressions include printing, pretty-printing, evaluating for variables, interpreting, and to_string methods. \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 \
+* Testing and bug reports\
+\pard\pardeftab720\li726\fi-8\ri0\partightenfactor0
+\cf2 		msdscript has been tested internally using unit tests, and externally using an exec.cpp call to the msdscript file. There are over 250 unit tests that cover five internal classes. The external fuzz testing generates random strings that are converted into variables, and random addition/multiplication strings that are converted into expressions and evaluated. Further fuzz testing will include functions, conditionals, and _let statements. As of now the testing is near 98% coverage, which means there will probably be bugs. Bug reports can be submitted to: {\field{\*\fldinst{HYPERLINK "mailto:therawandthecooked@gmail.com"}}{\fldrslt \cf4 \ul \ulc4 therawandthecooked@gmail.com}}\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 \
+* Integrations\
+\pard\pardeftab720\li723\fi-2\ri0\partightenfactor0
+\cf2 	As an interpreter for numbers, Booleans, and first-class functions, msdscript is a perfect addition to calendar applications where simple calculations need to be performed. To link msdscript to which_day, or to any other program that can take simple user inputs in the form of Booleans, numbers, and functions, please do the following:\
+\
+Step 1: Look for these lines in which.day.cpp:\
+// FIXME: evaluate `expr` instead of just wishing we could:\
+std::cout << "Would like to compute the meeting day for week " << argv[1] << " by interpreting:\\n\\n" << expr << "\\n";\uc0\u8232 // The way that `expr` is actually interpreted will depend on the interface\u8232 // that an MSDscript implementation gives you\
+\
+Step 2: Change those lines to:\
+std::cout << "Would like to compute the meeting day for week " << argv[1]\uc0\u8232           << " by interpreting:\\n\\n"\u8232           << expr << "\\n";\u8232 std::stringstream ss (expr);\u8232 PTR(EmptyEnv) empty_e = NEW(EmptyEnv)();\u8232 PTR(Value)v = (parse_expr(ss))->interp(empty_e);\u8232 std::cout << "The day you're looking for is: " << v << " days away\\n";\
+\
+You should now be able to run ./which_day \'93X\'94 from the terminal, replacing \'93X\'94 (quotes included) with the number of days you\'92d like to jump forward to.\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 \
+\
+}
